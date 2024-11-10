@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live-Chat</title>
+    <link rel="stylesheet" href="ContactStyle.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">BenjiBet</a>
+            </div>
+            <button class="hamburger-menu" onclick="toogle-menu()">&#9776</button>
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Sports.html">Sports</a></li>
+                <li><a href="Live-betting.html">Live Betting</a></li>
+                <li><a href="Promotion.html">Promotions</a></li>
+                <li><a href="#" class="under">Contact-Us</a></li>
+            </ul>
+            <div class="navicon">
+                <a href="#">$1 800 500 000</a>
+                <a href="#" class="colour">Sign-up</a>
+            </div>
+        </nav>
+    </header>
+    <div class="person">
+        <img src="contactus icon.png" alt="">
+        <h4>Emmanuel Martins</h4>
+    </div>
+    <div class="talk">
+        <a href="#">Emmanuel Martinz</a>
+        <p>Hello there! What's your name and how may i help you?</p>
+    </div>
+    <div class="chat">
+        <input type="text" placeholder="send a message">
+        <button type="submit">Send</button>
+    </div>
+    <script>
+        // Function to toggle the display of the nav menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.navlinks');
+            const navIcon = document.querySelector('.navicon');
+            
+            // Toggle the 'active' class to show or hide nav links
+            navLinks.classList.toggle('active');
+            navIcon.classList.toggle('active');
+        }
+    
+        // Add the toggle function to the hamburger menu button
+        document.querySelector('.hamburger-menu').addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>

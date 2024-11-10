@@ -1,0 +1,186 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(section\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 60px;
+}
+
+.navlinks li {
+    list-style: none;
+}
+
+.navlinks li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.navlinks li .under {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.navlinks li a:hover {
+    transition: 0.5s;
+    color: green;
+}
+
+.navlinks li .under:hover {
+    color: white;
+}
+
+.navicon a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navicon .colour {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.navicon .colour:hover {
+    background-color: white;
+    color: green;
+    transition: 0.5s;
+}
+
+.person {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+    align-items: center;
+}
+
+.person img {
+    width: 40px;
+    height: 40px;
+}
+
+.talk {
+    padding: 20px;
+    color: white;
+    background-color: green;
+    margin: 10px;
+}
+
+.talk a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.chat {
+    padding: 20px;
+    margin-top: 270px;
+    align-items: center;
+    text-align: center;
+}
+
+.chat input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 1240px;
+}
+
+.chat button {
+    padding: 10px;
+    border-radius: 10px;
+    color: green;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 100%;
+        align-items: center;
+    }
+    
+    
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        background-color: black;
+        width: 100%;
+    }
+
+    .navlinks li .under {
+        background: none;
+        color: green;
+    }
+
+    .navlinks li .under:hover {
+        color: green;
+    }
+
+    .navicon {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        background-color: black;
+        width: 100%;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 30px;
+        color: white;
+        background: none;
+        border: 1px solid white;
+        flex-direction: column;
+        align-self: last baseline;
+        cursor: pointer;
+    }
+
+    .chat input {
+        width: 380px;
+    }
+
+    .chat {
+        text-align: center;
+    }
+
+    .navlinks.active,
+    .navicon.active {
+    display: flex;
+}
+}

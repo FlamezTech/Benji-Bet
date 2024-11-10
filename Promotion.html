@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotion-BenjiBet</title>
+    <link rel="stylesheet" href="Promotion-style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">BenjiBet</a>
+            </div>
+            <button class="hamburger-menu" onclick="toogle-menu()">&#9776</button>
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Sports.html">Sports</a></li>
+                <li><a href="Live-betting.html">Live Betting</a></li>
+                <li><a href="#" class="under">Promotions</a></li>
+                <li><a href="Contact.html">Contact-Us</a></li>
+            </ul>
+            <div class="navicon">
+                <a href="#">$1 800 500 000</a>
+                <a href="#" class="colour">Sign-up</a>
+            </div>
+        </nav>
+    </header> 
+    <section class="refer">
+        <div class="referone">
+            <h1>Referrals</h1>
+            <p class="me">Sign up and get a 100% bonus on your first deposit!" (Include simple terms like "Minimum deposit: $10.)</p>
+            <p>Get 10% cashback on your losses every Monday.</p>
+        </div>
+        <div class="refertwo">
+            <div class="iconi">
+                <a href="#"><img src="Shareicon.png" alt=""></a>
+                <h3>Share and Earn</h3>
+                <p>Invite friends and earn $5 for each successful referral.</p>
+            </div>
+            <div class="iconi">
+                <a href="#"><img src="claimicon.png" alt=""></a>
+                <h3>How to Claim</h3>
+                <p>To claim the Welcome Bonus, register, make a deposit, and the bonus will be added automatically.</p>
+            </div>
+            <div class="iconi">
+                <a href="#"><img src="terms&conditionicon.png" alt=""></a>
+                <h3>Terms and Condition</h3>
+                <p>Minimum deposit amount</p>
+                <p>Wagering requirements</p>
+                <p>Expiration dates for each promotion</p>
+            </div>
+        </div>
+    </section>
+    <section class="inviteo">
+        <div class="friend">
+            <h1>Invite Your Friends</h1>
+            <p>Input their email to automatically send them an invitation</p>
+        </div>
+        <div class="friend1">
+            <input type="email" placeholder="Input-Email">
+            <button type="submit">Send</button>
+        </div>
+    </section>
+    <footer>
+        <div class="end">
+            <h2>Be Future Ready</h2>
+            <p>Need Support for website Designs and all drop your email to FlamezTech Nigeria</p>
+            <input type="email" placeholder="Input-Email">
+        </div>
+        <ul class="endlink">
+            <h4>Links</h4>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Responsible Gaming</a></li>
+        </ul>
+        <ul class="endlist">
+            <h4>Lisence and Registration</h4>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <div class="endicon">
+            <h5>Contact Us</h5>
+            <p>08058586759</p>
+            <p>njokusamuel2005@gmail.com</p>
+        </div>
+    </footer>
+    <script>
+        // Function to toggle the display of the nav menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.navlinks');
+            const navIcon = document.querySelector('.navicon');
+            
+            // Toggle the 'active' class to show or hide nav links
+            navLinks.classList.toggle('active');
+            navIcon.classList.toggle('active');
+        }
+    
+        // Add the toggle function to the hamburger menu button
+        document.querySelector('.hamburger-menu').addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 60px;
+}
+
+.navlinks li {
+    list-style: none;
+}
+
+.navlinks li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.navlinks li .under {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.navlinks li a:hover {
+    transition: 0.5s;
+    color: green;
+}
+
+.navlinks li .under:hover {
+    color: white;
+}
+
+.navicon a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navicon .colour {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.navicon .colour:hover {
+    background-color: white;
+    color: green;
+    transition: 0.5s;
+}
+
+.refer {
+    padding: 20px;
+}
+
+.referone {
+    text-align: left;
+    color: white;
+}
+
+.referone h1 {
+    font-size: 50px;
+}
+
+.referone p {
+    margin-bottom: 30px;
+}
+
+.referone .me {
+    margin: 0%;
+}
+
+
+.refertwo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconi {
+    color: white;
+    width: 300px;
+    text-align: center;
+}
+
+.iconi a img {
+    width: 40px;
+    height: 40px;
+}
+
+.iconi h3 {
+    padding-top: 10px;
+}
+
+.friend {
+    display: block;
+    text-align: left;
+    padding: 20px;
+    color: white;
+}
+
+.friend h1 {
+    color: green;
+    font-size: 50px;
+}
+
+.friend1 input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 600px;
+    margin-left: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.friend1 button {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: green;
+    border: 1px solid green;
+    border-left: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-image: url(section\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.end {
+    color: white;
+    width: 300px;
+}
+
+
+.end input {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-color: green;
+    width: 300px;
+    margin-top: 20px;
+}
+
+
+
+.endlink h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.endlink li {
+    list-style: none;
+}
+
+.endlink li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.endlist li {
+    list-style: none;
+}
+
+.endlist h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.endlist li a {
+    text-decoration: none;
+    color: white;
+}
+
+.endicon {
+    color: white;
+}
+
+.endicon h5 {
+    font-size: 20px;
+}
+
+.endlink li a:hover {
+    transition: 0.5s;
+    color: green;
+}
+
+.endlist li a:hover {
+    transition: 0.5s;
+    color: green;
+}
+
+.copywrite {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid white;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 100%;
+        align-items: center;
+    }
+    
+    
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        background-color: black;
+        width: 100%;
+    }
+
+    .navlinks li .under {
+        background: none;
+        color: green;
+    }
+
+    .navlinks li .under:hover {
+        color: green;
+    }
+
+    .navicon {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        background-color: black;
+        width: 100%;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 30px;
+        color: white;
+        background: none;
+        border: 1px solid white;
+        flex-direction: column;
+        align-self: last baseline;
+        cursor: pointer;
+    }
+
+    .refer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .referone h1 {
+        font-size: 40px;
+    }
+
+    .referone p {
+        font-size: 15px;
+    }
+
+    .refertwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .friend1 input {
+        width: 400px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .copywrite {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copywrite p {
+        font-size: 10px;
+    }
+
+    /* CSS for the active menu on mobile */
+.navlinks.active,
+.navicon.active {
+    display: flex;
+}
+}
